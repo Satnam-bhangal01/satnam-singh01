@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <title> card design using gradient colour</title>
+        <style>
+            #body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #card{
+                background: linear-gradient(to bottom ,rgb(65, 32, 94) , rgb(0, 0, 0) , rgb(1, 1, 5));
+                height: 320px; width: 470px; justify-self: center;
+                align-self: center; margin-top: 100; border-radius: 40px;
+                border: solid 5px rgb(157, 142, 172);
+            }
+            #footstep{
+                height: 25px; margin-top: 25; margin-left: 30; margin-right: 10;
+            }
+            #p1{
+                color: rgb(134, 123, 144); font-family: Arial, Helvetica, sans-serif;
+                 margin-top: 28; margin-right: 70;
+
+            }
+            
+            #p100{
+                height: 40px; margin-right: 80; margin-top: 15;
+            }
+            #button{
+                border-radius: 10px; border: solid 1px rgb(206, 188, 224);
+                background: none; color: rgb(157, 142, 172); margin-top: 20; margin-left: 20;
+                height: 30px; width: 100px; border-radius: 20px;
+            }
+            #button1{
+                border-radius: 10px; border: solid 2px rgba(146, 130, 163, 0.769);
+                background: none; color: rgb(157, 142, 172); margin-top: 17; margin-right: 60px;
+                margin-left: 10; border-top-color: aliceblue;
+                height: 39px; width: 40px; border-radius: 20px;}
+            #div1{
+                display: flex;
+            }
+            #p2{
+                color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 10px;
+                margin-right: 355px;
+            }
+            #div2{
+                display: flex; margin-bottom: 0px;
+            }
+            #p3{
+                color: rgb(196, 187, 205); font-size: 22px; margin-left: 15px;
+                margin-right: 240px; margin-top: 0px;
+            }
+            #div3{
+                display: flex;
+            }
+            #range{
+                width: 380px; margin-left: 30; height: 10px;
+            }
+            /* From Uiverse.io by rust_1966 */ 
+.progress-container {
+  position: relative;
+  width: 85%;
+  max-width: 500px;
+  height: 20px;
+  background: radial-gradient(circle, #1b2735, #090a0f);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  border: 1px solid #313131;
+  margin-left: 30px;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg, #00f260, #0575e6);
+  border-radius: 30px;
+  animation: grow 3s ease-in-out forwards;
+  box-shadow:
+    0 0 15px #00f260,
+    0 0 30px #0575e6;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
+  opacity: 0.5;
+  animation: ripple 3s infinite;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+.particle:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.particle:nth-child(2) {
+  top: 30%;
+  left: 70%;
+  animation-delay: 1s;
+}
+.particle:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  animation-delay: 2s;
+}
+.particle:nth-child(4) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 1.5s;
+}
+.particle:nth-child(5) {
+  top: 90%;
+  left: 60%;
+  animation-delay: 2.5s;
+}
+#p4{
+                color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 37px;
+                margin-right: 110px;
+            }
+            #div4{
+                display: flex; margin-bottom: 0px; margin-top: 0px;
+            }
+            #P5{
+                color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 30;
+                
+            }
+            #p6{
+                color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 140;
+            }
+            #p7{
+                color: rgb(133, 125, 141); font-size: 15px; margin-left: 30px;
+                margin-right: 100px; margin-bottom: 0px; margin-top: 0px;
+            }
+            #div5{
+                display: flex; margin-bottom: 0px; margin-top: 0px;
+            }
+            #P8{
+                color: rgb(133, 125, 141); font-size: 15px; margin-left: 20;
+                margin-top: 0px;
+                
+            }
+            #p9{
+                color: rgb(133, 125, 141); font-size: 15px; margin-left: 120;
+                margin-top: 0px;
+            }
+            .line{
+                 width: 4px; height: 50px;
+                  background: linear-gradient(to bottom , #8a45cb , #462058 );
+                  border-radius: 10px; margin-left: 40; margin-top: 10;
+            }
+            #p10{
+                color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 15px;
+                margin-right: 110px;
+            }
+            #p11{
+                color: rgb(132, 126, 137); font-size: 20px; margin-left: 15px;
+                margin-right: 15px; margin-top: 0px; margin-bottom: 0px;
+            }
+            #p12{
+                  color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 15px;
+                  margin-top: 4px;
+                
+            }
+             #p14{
+                color: rgb(132, 126, 137); font-size: 20px; margin-left: 15px;
+                margin-right: 15px; margin-top: 6px; margin-top: 0px;
+            }
+            #p13{
+                  color: rgba(134, 123, 144, 0.564); font-size: 11px; margin-left: 15px;
+                  margin-top: 4px;
+                
+            }
+            #div6{
+                display: flex; margin-top: 0px;
+            }
+                        #div7{
+                display: flex; margin-top: 0px;
+            }
+            #image1{
+                height: 30px; width: 40px; margin-left: 100; margin-top: 0px;
+                border-radius: 5px;
+            }
+             #image2{
+                height: 30px; width: 40px; margin-left: 10; margin-top: 0px;
+                 border-radius: 5px;
+            }
+
+
+
+
+        </style>
+
+    </head>
+
+
+    <body>
+        <div id="card">
+            <div id="div1">
+            <img id="footstep" src="./images/footstep.png" alt="">
+            <p id="p1"> Walking</p>
+            <button id="button1"> 2%</button><br>
+            <button id="button"> Next Step</button>
+            </div>
+            <div id="div2">
+            <p id="p2"> Distance</p>
+            <p id="p2"> Time</p>
+            </div>
+            <div id="div3">
+            <p id="p3">2miles</p>
+            <p id="p3"> ~39minutes</p>
+            </div>
+            <div class="progress-container">
+  <div class="progress-bar"></div>
+  <div class="progress-text">40%</div>
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+</div>
+<div id="div4">
+            <p id="p4"> Start</p>
+            <p id="p5"> Travel Time</p>
+             <p id="p6"> Start</p>
+            </div>
+            <div id="div5">
+            <p id="p7"> 10:00 AM</p>
+            <p id="p8"> 15 Min</p>
+             <p id="p9"> 10:40 AM</p>
+            </div>
+            <div class="line">
+                <div id="div6">
+                <p id="p12">Now.stops</p>
+                <p id="p11"> Columbus.Circle</p>
+                </div>
+                <div id="div7">
+                 <p id="p13">Now.stops</p>
+                <p id="p14"> Times.Square</p>
+                <img id="image1" 
+                    src="./images/lights.jpg" alt="">
+                    <img id="image2" 
+                    src="./images/lights.jpg" alt="">
+                </div>
+            </div>
+            
+        </div> 
+
+    
+    </body>
+</html>
