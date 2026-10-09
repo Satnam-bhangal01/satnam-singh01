@@ -1,0 +1,946 @@
+<html>
+
+<head>
+    <title> making my own webpage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-color: rgb(246, 248, 248);
+        }
+
+        #firstline {
+            padding: 20px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax( 90px , 1fr));
+            align-items: center;
+            gap: 20px;
+        }
+        .nav{
+            background:none; color: rgb(250, 104, 143);
+        }
+        .nav1{
+            color: rgb(4, 4, 19);
+            background:none;
+        }
+
+        #logo {
+            height: 25px;
+            margin: 0;
+        }
+
+        #name {
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            margin: 0;
+        }
+        #logoname{
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            margin-left: 70px;
+            
+            
+        }
+
+        #button {
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(90px , 1fr));
+            margin-left: 90px;
+        }
+
+        #button1 {
+            background-color:
+                rgba(210, 203, 203, 0.646);
+            border-radius:
+                10px;
+            height: 40px;
+            width: 90px;
+            border: none;
+            margin: 0;
+            margin-left: 60px;
+        }
+
+        #button2 {
+            background-color:
+                rgba(214, 42, 82, 0.747);
+            border-radius: 10px;
+            height: 40px;
+            width: 90px;
+            color: aliceblue;
+            border: none;
+            margin: 0;
+        }
+
+        #learningtxt {
+            color: rgb(5, 6, 7);
+            width: 350px;
+            margin: 0;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-size: 40px;
+        }
+
+        #sbs {
+            color: rgb(234, 18, 18);
+            font-size: 35px;
+            margin: 0;
+            margin-left: 30px;
+        }
+
+        #P {
+            color: rgb(168, 167, 167);
+            width: 400px;
+            margin: 0;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        #htmltag {
+            height: 30px;
+            margin-top: 10px;
+            background-color: rgb(251, 199, 199);
+            border-radius: 20px;
+            padding: 3px;
+            box-sizing: border-box;
+            margin-left: 35px;
+        }
+
+        #topics {
+            display: grid;
+            grid-template-columns: 70px 150px;
+        }
+
+        #topics3 {
+            display: grid;
+            grid-template-columns: 160px 190px 10px;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+
+        #laptop {
+            height: 250px;
+            width: 450px;
+            border-radius: 40px;
+            margin-top: 20px;
+        }
+
+        #secondline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+            background-color: rgb(241, 238, 238);
+            width: 1200px;
+            border-radius: 30px;
+            padding: 10px;
+            padding-bottom: 30px;
+            align-items: center;
+            justify-self: center;
+        }
+
+        #ablecourse {
+            margin: 0;
+            margin-left: 120px;
+            margin-top: 15px;
+            color: black;
+        }
+
+        #P2 {
+            color: rgb(168, 167, 167);
+            width: 400px;
+            margin: 0;
+            margin-left: 120px;
+            margin-top: 5px;
+        }
+
+        #button3 {
+            background-color:
+                rgb(244, 93, 93);
+            border-radius: 20px;
+            color: white;
+            height: 30px;
+            width: 70px;
+            border: none;
+            margin: 0;
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+
+        .button4 {
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            border: solid 1px rgb(215, 211, 211);
+            color: rgb(0, 0, 0);
+            height: 30px;
+            width: 120px;
+            margin: 0;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+
+        #htmlcss {
+            height: 220px;
+            width: 200px;
+            border-radius: 15px;
+        }
+
+        #button5 {
+            background-color:
+                rgba(40, 226, 149, 0.258);
+            border-radius: 20px;
+            color: rgb(34, 183, 141);
+            height: 20px;
+            width: 70px;
+            border: none;
+            margin: 0;
+            padding: 2px;
+            font-size: 10px;
+            margin-left: 220px;
+        }
+
+        #button6 {
+            background-color:
+                rgb(244, 93, 93);
+            border-radius: 20px;
+            color: white;
+            height: 30px;
+            width: 140px;
+            border: none;
+            margin: 0;
+            padding-bottom: 4px;
+            margin-top: 200px;
+        }
+
+        #coursename {
+            width: 350px;
+            margin-top: 40px;
+            color: black;
+        }
+
+        #P3 {
+            color: rgb(168, 167, 167);
+            width: 400px;
+            margin: 0;
+            margin-top: 80px;
+        }
+
+        #coursecontainer {
+            height: 280px;
+            width: 620px;
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 0px 230px 2px 0px 50px 0px 90px 10px 10px;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        #P4 {
+            color: rgb(168, 167, 167);
+            width: 400px;
+            margin: 0;
+            margin-top: 103px;
+            margin-bottom: 0px;
+        }
+
+        #P5 {
+            color: rgb(168, 167, 167);
+            width: 400px;
+            margin: 0;
+            margin-top: 140px;
+        }
+
+        #P6 {
+            color: rgb(168, 167, 167);
+            width: 400px;
+            margin: 0;
+            margin-top: 140px;
+        }
+
+        #coursesline {
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px , 1fr));
+        }
+
+        .SLB {
+            font-size: 13px;
+            color: black;
+            margin-top: 15px;
+        }
+
+        .profilepic {
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+
+        }
+        .feedbackbox{
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+        }
+        .work{
+            color: rgb(150, 150, 150);
+            font-size: 20px;
+            margin-left: 430px;
+        }
+        .aboutwork{
+            color: black;
+            width: 900px;
+            margin-left: 80px;
+        }
+        .pwithb{
+            display: grid;
+            grid-template-columns: 1050px 120px;
+        }
+        .startbutton{
+            height: 20px;
+            width: 150px;
+            border-radius: 20px;
+            margin-top: 30px;
+            padding: 15px;
+            padding-left: 30px;
+        }
+        .student{
+            color: black;
+            font-size: 30px;
+            margin-top: 40px;
+        }
+        #wcu{
+            color: rgb(249, 67, 67);
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        #reddot{
+            height: 15px;
+            width: 15px;
+            margin-left: 320px;
+            margin-top: 5px;
+        }
+        #rw{
+            display: flex;
+            margin-top: 40px;
+            
+        }
+        #hwithp{
+            color: black;
+        }
+        #YLP{
+            color: rgb(198, 57, 69);
+            margin-left: 180px;
+            font-weight: 700;
+        }
+        #WCUwithYLP{
+            display: flex;
+            font-weight: 700;
+        }
+        .cardpics{
+            height: 200px;
+        }
+        #cardsall{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .radytxt{
+            color: black;
+            font-size: 50px;
+            font-weight: 700;
+            margin: 0;
+            margin-left: 10px;
+        }
+        #startfree{
+            background-color:
+                rgb(244, 93, 93);
+            border-radius: 20px;
+            color: white;
+            height: 30px;
+            width: 140px;
+            border: none;
+            margin: 0;
+            padding-bottom: 4px;
+            margin-top: 10px;
+        }
+        #radycont{
+            height: 350px;
+            width: 700px;
+            background:none;
+            align-items: center;
+            text-align: center;
+            align-self: center;
+
+        }
+        #radyp{
+            color: rgb(137, 134, 134);
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        .iconcard{
+            height: 80px;
+            width: 80px;
+        }
+        .trustcard{
+            background-color: white;
+            border:  solid 2px lightgray;
+            width: 280px;
+        }
+        .titletrust{
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+        }
+        .trustP{
+            color: rgb(123, 122, 122);
+        }
+        #trustcards{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            
+        }
+        #trustbigbox{
+            background-color: white;
+            width:1000px;
+            height: 550px;
+            align-self: center;
+            align-content: center;
+            border-radius: 40px;
+        }
+         #startfree2{
+            background-color:
+                rgb(244, 93, 93);
+            border-radius: 20px;
+            color: white;
+            height: 30px;
+            width: 140px;
+            border: none;
+            margin: 0;
+            padding-bottom: 4px;
+            margin-top: 20px;
+            margin-left: 430px;
+        }
+        #formh1{
+            color: black;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 40px;
+        }
+        #fullformpage{
+            height: 600px;
+            width: 1000px;
+            background-color: rgba(238, 238, 238, 0.242);
+            align-self: center;
+            border-radius: 30px;
+            align-items: center;
+
+        }
+        #form{
+            background-color: rgba(255, 141, 141, 0.916);
+            height: 450px;
+            width: 400px;
+            justify-self: center;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+        #accoh2{
+            color: black;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .login{
+            height: 35px;
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            text-align: center;
+            margin-left: 70px;
+            
+        }
+        .gender{
+            background-color: aliceblue;
+            border: none;
+            margin-left: 70px;
+            margin-top: 15px;
+        }
+        .label{
+            margin-top: 13px;
+        }
+        .names{
+            margin: 0;
+            margin-left: 70px;
+            margin-top: 30px;
+        }
+        .buttonlogin{
+            margin-left: 120px;
+            margin-right: 10px;
+        }
+        .planH{
+            color: black;
+            text-align: center;
+            font-weight: 700;
+        }
+        .plancard{
+            width: 350px;
+            background:transparent;
+            color: black;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .enroll{
+            margin-left: 80px;
+            margin-top: 20px;
+            background-color: rgb(241, 84, 84);
+            border: none;
+        }
+        .mainplanH{
+            background-color: rgb(253, 93, 93);
+            font-size: 18px;
+        }
+        #allplans{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+
+    <div id="firstline">
+        <div id="logoname">
+        <img id="logo" src="./images/letter-s.png" alt="">
+        <h3 id="name">Satnam</h3>
+        </div>
+        <ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link active nav" aria-current="page" href="#">Courses</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#">Students</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav1" href="#">Learn</a>
+  </li>
+</ul>
+        <div id="button"><button id="button1">LOGIN</button>
+            <button id="button2">SIGN IN</button>
+        </div>
+    </div>
+    <div id="secondline">
+        <div>
+            <h1 id="learningtxt"> Build Your Skill
+            </h1>
+            <h3 id="sbs">Step by Step</h3>
+            <p id="P">Start with a basic and grow into a confident developer
+                <br>our courses are designed for beginners and help you learn
+                <br>Practically with real world examples.
+            </p>
+            <div id="topics3">
+                <div id="topics">
+                    <img id="htmltag" src="./images/div.png" alt="">
+                    <p class="SLB">Simple Topics</p>
+                </div>
+                <div id="topics">
+                    <img id="htmltag" src="./images/book.png" alt="">
+                    <p class="SLB">Learn at your place</p>
+                </div>
+                <div id="topics">
+                    <img id="htmltag" src="./images/rocket.png" alt="">
+                    <p class="SLB">Build real projects</p>
+                </div>
+            </div>
+        </div>
+        <img id="laptop" src="./images/codingonlaptop.jpg" alt="">
+    </div>
+    <h2 id="ablecourse">Available Courses
+    </h2>
+    <p id="P2">Choose what you want to Learn
+        and start you journy
+    </p>
+    <button id="button3">All</button>
+    <button class="button4">HTML & CSS</button>
+    <button class="button4">Javascript</button>
+    <button class="button4">Projects</button>
+    <button class="button4">Tools</button>
+    <br>
+    <div id="coursesline">
+        <div>
+            <div id="coursecontainer">
+                <img id="htmlcss" src="./images/htmlcss.jpg" alt="">
+                <button id="button5">Beginner</button>
+                <h2 id="coursename">HTML & CSS Basic</h2>
+                <p id="P3">Learn the fundamentals of HTML & CSS
+                <p id="p4"> To create a beautiful and responsive Website.</p>
+                </p>
+                <p id="P5">4 Lessons
+                </p>
+                <p id="P6">2 Hours
+                </p>
+                <button id="button6">Start Learning &#10132;</button>
+            </div>
+            <div id="coursecontainer">
+                <img id="htmlcss" src="./images/full stack img.jpg" alt="">
+                <button id="button5">Beginner</button>
+                <h2 id="coursename">Full Stack Development</h2>
+                <p id="P3">Learn frontend and backend development
+
+                <p id="p4"> to build complete and responsive websites.</p>
+                </p>
+                <p id="P5">4 Lessons
+                </p>
+                <p id="P6">2 Hours
+                </p>
+                <button id="button6">Start Learning &#10132;</button>
+            </div>
+        </div>
+        <div>
+            <div id="coursecontainer">
+                <img id="htmlcss" src="./images/AI-ML.jpg" alt="">
+                <button id="button5">Beginner</button>
+                <h2 id="coursename">AI/ML</h2>
+                <p id="P3">Learn AI and Machine Learning to build smart
+
+
+                <p id="p4">  applications and solve real-world problems.</p>
+                </p>
+                <p id="P5">4 Lessons
+                </p>
+                <p id="P6">2 Hours
+                </p>
+                <button id="button6">Start Learning &#10132;</button>
+            </div>
+            <div id="coursecontainer">
+                <img id="htmlcss" src="./images/javascript.jpg" alt="">
+                <button id="button5">Beginner</button>
+                <h2 id="coursename">Javascript</h2>
+                <p id="P3">Learn JavaScript to make websites interactive
+                <p id="p4">  with simple coding concepts.</p>
+                </p>
+                <p id="P5">4 Lessons
+                </p>
+                <p id="P6">2 Hours
+                </p>
+                <button id="button6">Start Learning &#10132;</button>
+            </div>
+        </div>
+    </div>
+    <div id="carouselMultiple" class="carousel slide" data-bs-ends="stop"
+        style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+        <div class="d-flex justify-content-between align-items-center">
+            <h5 class="mb-0 student">Our Students &#8600;</h5>
+            <div>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="prev"
+                    style="--bs-carousel-control-icon-width: 1rem;">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselMultiple" data-bs-slide="next"
+                    style="--bs-carousel-control-icon-width: 1rem;">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div id="carouselStackedBottom" class="carousel slide">
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active feedbackbox">
+      <img src="./images/profileman.jpg" class="d-block w-100 profilepic" alt="...">
+      <h2 id="name">JAKE LEE</h2>
+      <p class="work">Software Engineer</p>
+      <div class="pwithb">
+      <p class="aboutwork">Start your journey towards a 
+        successful software engineeringcareer with
+         Satnam Excellence. Learn programming fundamentals,
+          problem-solving, software development, and real-world
+           project building. Develop the technical skills needed to
+            create reliable and innovative software solutions. Gain p
+            ractical experience through hands-on projects and continuous learning.
+             Build confidence to solve complex problems and prepare for technical
+              interviews. With dedication and the right skills, you can aim for exc
+              iting career opportunities at leading companies like Googl
+              e, Microsoft, and Amazon. Your future in 
+              technology starts with one step today.
+</p>
+ <button type="button" class="theme-primary btn-solid startbutton">Start Now &#8594;
+  <svg class="bi ms-1" width="10" height="10" aria-hidden="true">
+    <use href="#arrow-right" />
+  </svg>
+</button>
+
+    </div>
+    </div>
+    <div class="carousel-item feedbackbox">
+      <img src="images/profileman2.jpg" class="d-block w-100 profilepic" alt="...">
+       <h2 id="name">Sarah Kim</h2>
+       <p class="work">Ai mern stack Developer</p>
+       <div class="pwithb">
+       <p class="aboutwork">
+        Build your future as an AI & MERN Stack Engineer with
+         Satnam Excellence. Learn to develop modern web applications
+          using MongoDB, Express.js, React, and Node.js. Explore how artificial
+           intelligence can make applications smarter, faster, and more useful. Ga
+           in practical experience by creating full-stack projects and i
+           ntegrating AI-powered features. Strengthen your coding, debugging, 
+           and problem-solving skills through hands-on practice. Prepare 
+           to pursue opportunities in modern technology companies and 
+           innovative startups. Turn your ideas into intelligent 
+           applications and take your development career to the next level.
+
+       </p>
+        <button type="button" class="theme-primary btn-solid startbutton">Start Now &#8594;
+  <svg class="bi ms-1" width="10" height="16" aria-hidden="true">
+    <use href="#arrow-right" />
+  </svg>
+</button>
+
+       </div>
+    </div>
+    <div class="carousel-item feedbackbox">
+      <img src="images/profileman3.jpg" class="d-block w-100 profilepic" alt="...">
+       <h2 id="name">Samantu Shin</h2>
+       <p class="work">AI/ML Expert</p>
+       <div class="pwithb">
+       <p class="aboutwork">
+        Explore the exciting world of Artificial Intelligence and Machine Learning wit
+        h Satnam Excellence. Learn how intelligent systems process data, r
+        ecognize patterns, and solve real-world problems. Develop fo
+        undational skills in Python, data analysis, machine learning, a
+        nd AI model development. Practise your knowledge by building pr
+        ojects that demonstrate your abilities. Discover 
+        emerging technologies such as generative AI 
+        and intelligent automation as your skills grow. With consistent 
+        practice and strong technical knowledge, you can work towards c
+        areer opportunities at leading technology companies. Start l
+        earning today and help shape the intelligent future of tomorrow.
+
+       </p>
+       <button type="button" class="theme-primary btn-solid startbutton">Start Now &#8594;
+  <svg class="bi ms-1" width="10" height="10" aria-hidden="true">
+    <use href="#arrow-right" />
+  </svg>
+</button>
+
+       </div>
+    </div>
+  </div>
+  <div>
+    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedBottom" data-bs-slide="prev">
+      <span class="carousel-icon-prev" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedBottom" data-bs-slide="next">
+      <span class="carousel-icon-next" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div id="WCUwithYLP">
+<div id="rw">
+<img id="reddot" src="./images/record.png" alt="">
+<p id="wcu">Why choose us</p>
+</div>
+<div>
+    <h1 id="YLP">Your Learning Partner <br>
+<p id="hwithp">Here’s Why You’ll Love <br>
+Us</p></h1>
+</div>
+</div>
+<div id="cardsall">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./images/codingandcoffee.jpg" class="card-img cardpics" alt="...">
+    <h5 class="mt-2 mb-0">Exciting Courses</h5>
+    <p class="card-text fg-2">Learn from beginners to advance<br>
+    with Well-structured courses <br>
+     desgined for real-world skills <br>
+    and career growth. </p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./images/languagebooks.jpg" class="card-img cardpics" alt="...">
+    <h5 class="mt-2 mb-0">Real World skills
+    </h5>
+    <p class="card-text fg-2">Get Hands-on experienced by <br>
+    building real projects and <br>
+working with the latest <br>
+technologies and tools.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./images/community.jpg" class="card-img cardpics" alt="...">
+    <h5 class="mt-2 mb-0">Community Support</h5>
+    <p class="card-text fg-2">Be part of a supportive <br>
+    Learning Community where <br>
+you can ask questions , get help <br>
+and grow together.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./images/Get hired.jpg" class="card-img cardpics" alt="...">
+    <h5 class="mt-2 mb-0">Get Hired!</h5>
+    <p class="card-text fg-2">Build your protfolio , prepare <br>
+    for interviews and get career <br>
+opportunities at top companies <br>
+like Google , Microsoft and Amazon.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+</div><br><br>
+<div id="radycont">
+<h1 class="radytxt">Ready to Transfer Your</h1>
+<h1 class="radytxt"> Future in Tech?</h1>
+<p id="radyp">Get 'Satnam' learning platform for new <br>
+  prospective Students arriving and <br>
+evolving at the 'Satnam' learning <br> platform</p>
+<button id="startfree">Start for free</button>
+</div>
+<div id="trustbigbox">
+<div id="trustcards">
+<div>
+<div class="card trustcard" style="max-width: 320px;">
+  <div class="card-body">
+    <img class="iconcard" src="./images/customer.png" alt="">
+    <p class="card-subtitle fg-3 titletrust">Expert Mentors</p>
+    <p class="card-text trustP">Dedicated Support from <br>
+    industry leaders</p>
+  </div>
+</div><br>
+<div class="card trustcard" style="max-width: 320px;">
+  <div class="card-body">
+    <img class="iconcard" src="./images/folder.png" alt="">
+    <p class="card-subtitle fg-3 titletrust">Real Projects</p>
+    <p class="card-text trustP">Build your portfolio with <br>
+    practically challenge</p>
+  </div>
+</div>
+</div>
+<div>
+<div class="card trustcard" style="max-width: 320px;">
+  <div class="card-body">
+    <img class="iconcard" src="./images/group.png" alt="">
+    <p class="card-subtitle fg-3 titletrust">Supportive Community</p>
+    <p class="card-text trustP">Learn alongside peers<br>
+    and mentors.</p>
+  </div>
+</div><br>
+<div class="card trustcard" style="max-width: 320px;">
+  <div class="card-body">
+    <img class="iconcard" src="./images/bag (1).png" alt="">
+    <p class="card-subtitle fg-3 titletrust">Job Readiness</p>
+    <p class="card-text trustP">Skills employers are<br>
+    Looking for.</p>
+  </div>
+</div>
+</div>
+</div>
+<button id="startfree2">Start for free</button>
+</div>
+<div id="fullformpage">
+<h1 id="formh1">Your First Step to a successful <br>
+    Tech Career Starts Here
+</h1>
+<div id="form">
+    <h2 id="accoh2">Start Your Free Account</h2>
+    <p class="names">Username</p>
+    <input class="login" type="text" name="username" id="username"
+    placeholder="Enter username">
+    <p class="names">Email</p>
+    <input class="login" type="text" name="username" id="username"
+    placeholder="Enter email">
+    <p class="names">Password</p>
+    <input class="login" type="text" name="username" id="username"
+    placeholder="Enter password">
+    <div class="form-field">
+  <input class="radio gender" name="radios" type="radio" id="radioLabel" />
+  <label class="label" for="radioLabel">Male</label>
+</div>
+<div class="form-field">
+  <input class="radio gender" name="radios" type="radio" id="radioLabel2" />
+  <label class="label" for="radioLabel2">Female</label>
+</div><br>
+   <button type="button" class="btn-subtle theme-success buttonlogin">Login</button>
+    <button type="button" class="btn-outline theme-danger buttonreset">Reset</button>
+</div>
+</div><br><br><br>
+<h1 class="planH">Simplify Plan Highlights</h1>
+<h4 class="planH">Simple & flexible option for every learner.</h4><br>
+<div id="allplans">
+<div class="card plancard">
+  <h5 class="card-header mainplanH">Starter $0/mo</h5>
+  <div class="card-body">
+    <h4 class="card-title">Free</h4>
+    <p class="card-text">Basic access for beginners <br>
+    starting out : <br>
+    Acess to basic <br>
+    (HTML/CSS) <br>
+    Access to community <br>
+     discussions
+    Self-placed <br>
+     learning
+</p>
+    <a href="#" class="btn-solid theme-primary enroll">Enroll now</a>
+  </div>
+</div>
+<div class="card plancard">
+  <h5 class="card-header mainplanH">Most popular $29/mo</h5>
+  <div class="card-body">
+    <h4 class="card-title">Pro</h4>
+    <p class="card-text">Full access to build real <br>
+    projects & portfolio :<br>
+    Full stack, Ai/ML <br>
+    Real-world portfolio <br>
+    projects <br>
+    Code reviews from <br>
+    mentors <br>
+    Certificate of <br>
+    completion
+</p>
+    <a href="#" class="btn-solid theme-primary enroll">Enroll now</a>
+  </div>
+</div>
+<div class="card plancard">
+  <h5 class="card-header mainplanH">Career Boost $59/mo</h5>
+  <div class="card-body">
+    <h4 class="card-title">Premium</h4>
+    <p class="card-text">Complete career transfomation<br>
+    <br>with placesment<br>
+    Everything in pro plan<br>
+    1-on-1 Live mentorship<br>
+    sessions <br>
+    Resume & Linkedln <br>
+    review <br>
+    Mock technical <br>
+    interviews
+</p>
+    <a href="#" class="btn-solid theme-primary enroll">Enroll now</a>
+  </div>
+</div>
+</div>
+
+
+</body>
+
+</html>
