@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    <title>
+        make a assignment with hover and Aos library
+    </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <style>
+        .btncolor {
+            height: 35px;
+            border: none;
+            background-color: rgb(255, 145, 145);
+            border-radius: 10px;
+            margin-left: 10px;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .btncolor:hover {
+            border-radius: 20px;
+            background-color: rgb(255, 74, 74);
+            transition: 1.1s;
+            cursor: pointer;
+            transform: scale(1.5);
+            margin-left: 40px;
+            margin-top: 20px;
+            color: white;
+            font-size: 13px;
+
+
+        }
+
+        .btncolor1 {
+            height: 35px;
+            width: 150px;
+            border: none;
+            background-color: rgb(151, 192, 213);
+            border-radius: 10px;
+            margin-left: 10px;
+            color: white;
+            font-size: 15px;
+            text-decoration-line: none;
+            text-align: center;
+            align-content: center;
+        }
+
+        .btncolor1:hover {
+            border-radius: 20px;
+            background-color: rgb(10, 226, 254);
+            transition: 1.1s;
+            cursor: pointer;
+            transform: scale(1.5);
+            margin-left: 40px;
+            margin-top: 20px;
+            color: black;
+            font-size: 13px;
+
+        }
+
+        .btncolor2 {
+            height: 35px;
+            width: 150px;
+            border: none;
+            background-color: #b398cc;
+            border-radius: 10px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+        .btncolor2:hover {
+            border-radius: 20px;
+            background-color: rgb(203, 13, 255);
+            transition: 1.1s;
+            cursor: pointer;
+            transform: scale(1.5);
+            margin-left: 40px;
+            margin-top: 20px;
+            color: white;
+            font-size: 13px;
+
+        }
+
+        .btncolor3 {
+            height: 35px;
+            width: 150px;
+            border: none;
+            background-color: rgb(255, 206, 145);
+            border-radius: 10px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+        .btncolor3:hover {
+            border-radius: 20px;
+            background-color: rgb(241, 144, 9);
+            transition: 1.2s;
+            cursor: pointer;
+            transform: scale(1.5);
+            margin-left: 40px;
+            margin-top: 20px;
+            color: white;
+            font-size: 13px;
+
+        }
+
+        .img {
+            height: 250px;
+            width: 100%;
+        }
+
+        .img:hover {
+            transform: scale(1.1);
+            transition: 1.2s;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .cards {
+            transition: 1.1s;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            margin-left: 40px;
+            margin-top: 40px;
+            background-color: #342929;
+
+        }
+
+        .img1 {
+            height: 250px;
+            width: 100%;
+        }
+
+        .img1:hover {
+            transform: scale(1.1);
+            transition: 1.2s;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .cards1 {
+            transition: 1.1s;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .cards1:hover {
+            transform: scale(1.1);
+            margin-left: 40px;
+            margin-top: 40px;
+            background-color: rgb(205, 160, 215);
+
+        }
+
+        .img2 {
+            height: 250px;
+            width: 100%;
+        }
+
+        .img2:hover {
+            transform: scale(1.1);
+            transition: 1.2s;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .cards2 {
+            transition: 1.1s;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .cards2:hover {
+            transform: scale(1.1);
+            margin-left: 40px;
+            margin-top: 40px;
+            background-color: rgb(255, 49, 49);
+
+        }
+
+        .img3 {
+            height: 250px;
+            width: 100%;
+        }
+
+        .img3:hover {
+            transform: scale(1.1);
+            transition: 1.2s;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .cards3 {
+            transition: 1.1s;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .cards3:hover {
+            transform: scale(1.1);
+            margin-left: 40px;
+            margin-top: 40px;
+            background-color: rgb(134, 134, 104);
+
+        }
+
+        .cards4 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .buttons4 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+
+        .crd {
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        .crd:hover {
+            background-color: rgb(44, 120, 155);
+            color: black;
+            transition: 1.1s;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buttons4">
+        <button class="btncolor">
+            Background change
+        </button>
+        <button class="btncolor1">
+            Text color change
+        </button>
+        <button class="btncolor2">
+            smooth transition
+        </button>
+        <button class="btncolor3">
+            Transform Scale
+        </button>
+    </div>
+    <div class="cards4">
+        <section class="card cards" style="max-width: 320px">
+            <img src="./images/coffee beans.jpg" class="card-img-top img" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Coffee beans</h4>
+                <p class="card-text">Some quick example text to build on
+                    the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn-solid theme-primary btncolor1">Buy now</a>
+            </div>
+        </section>
+        <section class="card cards1" style="max-width: 320px">
+            <img src="./images/codingandcoffee.jpg" class="card-img-top img1" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Mern Stack Developer</h4>
+                <p class="card-text">Some quick example text to build on
+                    the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn-solid theme-primary btncolor2">Enroll now</a>
+            </div>
+        </section>
+        <section class="card cards2" style="max-width: 320px">
+            <img src="./images/gaming.jpg" class="card-img-top img2" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Gaming</h4>
+                <p class="card-text">Some quick example text to build on
+                    the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn-solid theme-primary btncolor">Play Now</a>
+            </div>
+        </section>
+        <section class="card cards3" style="max-width: 320px">
+            <img src="./images/cofee cup 2.jpg" class="card-img-top img3" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Coffee Time</h4>
+                <p class="card-text">Some quick example text to build on
+                    the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn-solid theme-primary btncolor3">Order Now</a>
+            </div>
+        </section>
+    </div>
+    <div data-aos="fade-up">
+        <div class="card crd" style="max-width: 320px;">
+            <div class="card-body">
+                <h4 class="card-title">Fade Up</h4>
+                <p class="card-subtitle fg-3">from bottom to up</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                <a href="#" class="btncolor1">Fade up
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-right">
+        <div class="card crd" style="max-width: 320px;">
+            <div class="card-body">
+                <h4 class="card-title">Fade Right</h4>
+                <p class="card-subtitle fg-3">from left to right</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                <a href="#" class="btncolor1">Fade right</a>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in">
+        <div class="card crd" style="max-width: 320px;">
+            <div class="card-body">
+                <h4 class="card-title">Zoom In</h4>
+                <p class="card-subtitle fg-3">Small to big</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                <a href="#" class="btncolor1">Zoom in</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+</body>
+
+</html>
