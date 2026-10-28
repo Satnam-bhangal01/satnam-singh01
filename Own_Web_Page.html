@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+
+<style>
+   body {
+      background-color: #06090e;
+   }
+
+   #logo {
+      height: 60px;
+      margin: 0;
+      border-radius: 30px;
+
+   }
+
+   #name {
+      font-size: 30px;
+      color: #E8B76F;
+      margin-top: 8px;
+   }
+
+   .nav1 {
+      color: #e6b469da;
+   }
+
+   #navbutton {
+      color: white;
+      border-radius: 20px;
+      border: solid 1px #f5b350;
+      text-decoration-line: none;
+      padding: 8px 20px;
+      height: 45px;
+      margin-top: 8px;
+
+   }
+
+   #navbar {
+      display: grid;
+      grid-template-columns: 60px 330px 620px 180px;
+      margin-top: 10px;
+      width: 1200px;
+      position: fixed;
+      left: 50px;
+      background-color: #000;
+      z-index: 1;
+      border-radius: 30px;
+   }
+
+   .nav {
+      margin-top: 8px;
+      gap: 50px;
+   }
+
+   #second-portion {
+      position: relative;
+      top: 150px;
+
+
+   }
+
+   #h2 {
+      color: #f6b14bd8;
+      font-size: 50px;
+      position: absolute;
+      left: 100px;
+      top: 100px;
+   }
+
+   #h1 {
+      font-size: 50px;
+      position: absolute;
+      left: 100px;
+      top: 50px;
+   }
+
+   #p1 {
+      position: absolute;
+      left: 100px;
+      top: 165px;
+      color: #A8B0BC;
+   }
+
+   #image-second {
+      position: absolute;
+      left: 550px;
+      width: 700px;
+      height: 450px;
+      border-radius: 50px;
+      mask-image: radial-gradient(ellipse at center,
+            #000000 5%,
+            rgba(0, 0, 0, 0.85) 55%,
+            transparent 100%);
+
+   }
+
+   #navbutton2 {
+      color: rgb(0, 0, 0);
+      border-radius: 20px;
+      border: solid 1px #e7e4df;
+      text-decoration-line: none;
+      padding: 7px 20px;
+      height: 40px;
+      width: 195px;
+      margin-top: 8px;
+      background: linear-gradient(#fdd287, #efa83d);
+      position: absolute;
+      top: 245px;
+      left: 90px;
+      font-weight: 600;
+
+   }
+
+   #navbutton3 {
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+      border: solid 1px #c5c4c2;
+      text-decoration-line: none;
+      padding: 7px 20px;
+      height: 40px;
+      margin-top: 8px;
+      position: absolute;
+      top: 245px;
+      left: 300px;
+
+   }
+
+   #required1 {
+      font-size: 12px;
+      color: #f1dab7;
+      position: absolute;
+      top: 320px;
+      left: 100px;
+   }
+
+   #required2 {
+      font-size: 12px;
+      color: #f1dab7;
+      position: absolute;
+      top: 320px;
+      left: 220px;
+   }
+
+   #required3 {
+      font-size: 12px;
+      color: #f1dab7;
+      position: absolute;
+      top: 320px;
+      left: 390px;
+   }
+   #third-portion{
+      position: relative;
+      top: 650px;
+   }
+   #ftr-btn{
+      border: solid 1px #E8B76F;
+      width: 90px;
+      background: radial-gradient( #fff8ee25 , #ebc88b29 , #fbbf656f);
+      color: #efa83d;
+      padding: 0px 7px;
+      border-radius: 20px;
+      font-size: 11px;
+      position: absolute;
+      left: 90px;
+      top: 20px;
+      }
+      #tsk-con{
+         position: relative;
+      }
+      #tsk-h{
+         position: absolute;
+         top: 15px;
+         left: 670px;
+      }
+      #tsk-p{
+         position: absolute;
+         top: 45px;
+         font-size: 13px;
+         left: 670px;
+         color: #A8B0BC;
+      }
+      #tsk-con2{
+         position: relative;
+      }
+      #tsk-h2{
+         position: absolute;
+         top: 15px;
+         left: 1040px;
+      }
+      #tsk-p2{
+         position: absolute;
+         top: 45px;
+         font-size: 13px;
+         color: #A8B0BC;
+         left: 1040px;
+      }
+      #tsk-con3{
+         position: relative;
+      }
+      #tsk-h3{
+         position: absolute;
+         top: 140px;
+         left: 670px;
+      }
+      #tsk-p3{
+         position: absolute;
+         top: 170px;
+         font-size: 13px;
+         color: #A8B0BC;
+         left: 670px;
+      }
+       #tsk-con4{
+         position: relative;
+      }
+      #tsk-h4{
+         position: absolute;
+         top: 135px;
+         left: 1040px;
+      }
+      #tsk-p4{
+         position: absolute;
+         top: 165px;
+         font-size: 13px;
+         color: #A8B0BC;
+         left: 1040px;
+      }
+      #thrd-h{
+         position: absolute;
+         top:40px;
+         left: 90px;
+         color: #e0ddd8;
+      }
+      #thrd-p{
+         position: absolute;
+         color: #A8B0BC;
+         font-size: 15px;
+         top: 140px;
+         left: 90px;
+      }
+      #tsk-img{
+         position: absolute;
+         left: 550px;
+          height: 100px;
+         width: 95px;
+      }
+       #tsk-img2{
+         position: absolute;
+         left: 920px;
+          height: 90px;
+         width: 95px;
+      }
+       #tsk-img3{
+         position: absolute;
+         left: 550px;
+         top: 130px;
+         height: 90px;
+         width: 95px;
+      }
+       #tsk-img4{
+         position: absolute;
+         left: 920px;
+         top: 125px;
+          height: 95px;
+         width: 95px;
+      }
+      #fourth-p{
+         position: relative;
+         top: 930px;
+      }
+      #lap-logo{
+         position: absolute;
+         height: 330px;
+         width: 650px;
+         left: 90px;
+      }
+      #abt-btn{
+      border: solid 1px #E8B76F;
+      width: 60px;
+      color: #efa83d;
+      padding: 0px 7px;
+      border-radius: 20px;
+      font-size: 11px;
+      position: absolute;
+      left: 800px;
+      top: 35px;
+      }
+      #fourth-h{
+         position: absolute;
+         left: 800px;
+         top: 60px;
+      }
+      #fourth-pgf{
+         position: absolute;
+         left: 800px;
+         top: 165px;
+      }
+      #navbutton-fourth {
+      color: rgb(250, 186, 113);
+      border-radius: 20px;
+      border: solid 1px #f5b350;
+      text-decoration-line: none;
+      padding: 4px 20px;
+      height: 35px;
+      margin-top: 8px;
+      position: absolute;
+      top: 290px;
+      left: 800px;
+
+   }
+   #rtg-con{
+      position: relative;
+      top: 1290px;
+   }
+   #rtg-img{
+      height: 80px;
+      width: 100%;
+   }
+   #rtg-1{
+      position: absolute;
+      color: #f2ba65d8;
+      top: 15px;
+      left: 120px;
+      font-size: 28px;
+   }
+   #rtg-p1{
+      position: absolute;
+      color: #A8B0BC;
+      left: 105px;
+      top: 53px;
+      font-size: 14px;
+
+   }
+   #rtg-line{
+      position: absolute;
+      height: 40px;
+      width: 1px;
+      background: linear-gradient(#dedddc78 , #e1e0de92 , #dcd9d669);
+      left: 370px;
+      top: 25px;
+   }
+     #rtg-2{
+      position: absolute;
+      color: #f2ba65d8;
+      top: 15px;
+      left: 420px;
+      font-size: 28px;
+   }
+   #rtg-p2{
+      position: absolute;
+      color: #A8B0BC;
+      left: 435px;
+      top: 53px;
+      font-size: 14px;
+
+   }
+   #rtg-line2{
+      position: absolute;
+      height: 40px;
+      width: 1px;
+      background: linear-gradient(#dedddc78 , #e1e0de92 , #dcd9d669);
+      left: 690px;
+      top: 25px;
+   }
+     #rtg-3{
+      position: absolute;
+      color: #f2ba65d8;
+      top: 15px;
+      left: 720px;
+      font-size: 28px;
+   }
+   #rtg-p3{
+      position: absolute;
+      color: #A8B0BC;
+      left: 750px;
+      top: 53px;
+      font-size: 14px;
+
+   }
+   #rtg-line3{
+      position: absolute;
+      height: 40px;
+      width: 1px;
+      background: linear-gradient(#dedddc78 , #e1e0de92 , #dcd9d669);
+      left: 950px;
+      top: 25px;
+   }
+     #rtg-4{
+      position: absolute;
+      color: #f2ba65d8;
+      top: 15px;
+      left: 985px;
+      font-size: 28px;
+   }
+   #rtg-p4{
+      position: absolute;
+      color: #A8B0BC;
+      left: 1020px;
+      top: 53px;
+      font-size: 14px;
+
+   }
+</style>
+
+<body>
+
+   <navbar id="navbar">
+      <img id="logo"
+         src="https://template.canva.com/EAGL2ZAmdbM/1/0/1600w-2rNqw4cACo0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHTDK3B5XO%2F20261025%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261025T072007Z&X-Amz-Expires=83146&X-Amz-Signature=83bb1f611b3f0d69a5039ea1c3210f717b8217e4c2fb295b1758d77fb9d0b31d&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2026%20Oct%202026%2006%3A25%3A53%20GMT"
+         alt="">
+      <h1 id="name">SΛTNΛM 𝗝𝗘𝗪𝗘𝗟𝗦</h1>
+      <div class="nav-overflow" data-bs-toggle="nav-overflow" nav>
+         <ul class="nav nav-underline">
+            <li class="nav-item">
+               <a class="nav-link active nav1" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact</a>
+            </li>
+         </ul>
+      </div>
+      <a id="navbutton" href="">Explore Jewellery &#8594;</a>
+   </navbar>
+
+   <div id="second-portion">
+      <h1 id="h1">
+         Timeless Elegance.
+      </h1>
+      <h1 id="h2">
+         Crafted to Shine.
+      </h1>
+      <p id="p1">
+         At SATNAM JEWELS, we craft fine jewellery <br>
+         for life's most meaningful moments -- blending <br>
+         tradition, artistry and timeless beauty.
+      </p>
+      <a id="navbutton2" href="">Explore Collection &#8594;</a>
+      <a id="navbutton3" href=""> &#9745; Our Craftsmanship</a>
+      <p id="required1">&#10003; Hallmarked Gold</p>
+      <p id="required2">&#9830; Thoughtful Craftsmanship </p>
+      <p id="required3">&#9825; Made for everymoment</p>
+
+
+      <img id="image-second" src="./images/jewellery.png" alt="">
+   </div>
+
+
+   <div id="third-portion">
+    <p id="ftr-btn">Our Collections</p>
+    <h1 id="thrd-h">
+      Jewellery for<br>
+      Every Chapter
+    </h1>
+    <p id="thrd-p">
+      SATNAM brings together powerful tools to help you <br>
+      work smarter, not harder.
+    </p>
+    <div id="tsk-con">
+      <img id="tsk-img" src="./images/neckless.png" alt="">
+      <h5 id="tsk-h">Necklases</h5>
+      <p id="tsk-p">Graceful design for <br>
+      every occasion.</p>
+    </div>
+    <div id="tsk-con2">
+      <img id="tsk-img2" src="./images/ring.png" alt="">
+      <h5 id="tsk-h2">Ring</h5>
+      <p id="tsk-p2">Symbols of love,<br>
+      forever.</p>
+    </div>
+    <div id="tsk-con3">
+      <img id="tsk-img3" src="./images/earring.png" alt="">
+      <h5 id="tsk-h3">Errings</h5>
+      <p id="tsk-p3">Add a touch of<br>
+      brilliance.</p>
+    </div>
+    <div id="tsk-con4">
+      <img id="tsk-img4" src="./images/shala.png" alt="">
+      <h5 id="tsk-h4">Bracelets</h5>
+      <p id="tsk-p4">Timeless pieces for<br>
+      everyday elegance.</p>
+    </div>
+    </div>
+
+    <div id="fourth-p">
+      <img id="lap-logo" src="./images/necklaces.png" alt="">
+      <p id="abt-btn">About us</p>
+      <h1 id="fourth-h">Crafted with Care. <br>
+      Made to Last.</h1>
+      <p id="fourth-pgf">
+         SATNAM JEWELS began with a simple belief -- that <br>
+         true luxury is not just about how it looks, but how it feels. <br>
+         We create fine gold jewellery with unmatched Craftsmanship, <br>
+         using time-honoured techniques and the finest materials, <br>
+         so your most precious moments last forever.
+      </p>
+      <a id="navbutton-fourth" href="">Our Story &#8594;</a>
+
+    </div>
+
+    <div id="rtg-con">
+      <img id="rtg-img" src="./images/mount-light.png" alt="">
+      <h2 id="rtg-1">Fine Designs</h2>
+      <p id="rtg-p1">Timeless pieces , modern styles.</p>
+      <div id="rtg-line"></div>
+      <h2 id="rtg-2">Crafted With Care</h2>
+      <p id="rtg-p2">Built on tradition, made for you.</p>
+      <div id="rtg-line2"></div>
+      <h2 id="rtg-3">Customer Love</h2>
+      <p id="rtg-p3">Your trust inspires us.</p>
+      <div id="rtg-line3"></div>
+      <h2 id="rtg-4">Signature Styles</h2>
+      <p id="rtg-p4">Uniquely yours, always</p>
+      <div id="rtg-line4"></div>
+      
+    </div>
+
+   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
