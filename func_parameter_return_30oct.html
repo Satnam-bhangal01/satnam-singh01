@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        This is function with parameter and return
+    </h1>
+
+
+    <script>
+
+        function addition(a, b) {
+            sum = a + b
+            return sum
+        }
+        result = addition(10, 20)
+        console.log(result)
+
+
+
+
+
+
+        function subtraction(a1, b1) {
+            sub = a1 - b1
+            return sub
+        }
+        result1 = subtraction(20, 10)
+        console.log(result1)
+
+
+
+
+
+
+        function multiplication(a2, b2) {
+            multi = a2 * b2
+            return multi
+        }
+        result2 = multiplication(10, 10)
+        console.log(result2)
+
+
+
+
+        function Division(a3, b3) {
+            multi = a3 / b3
+            return multi
+        }
+        result3 = Division(20, 10)
+        console.log(result3)
+
+
+
+
+
+
+        function square(a4) {
+            squ = a4 * a4
+            return squ
+        }
+        result4 = square(20)
+        console.log(result4)
+
+
+
+
+
+
+
+        function cube(a5) {
+            cub = a5 * a5 * a5
+            return cub
+        }
+        result5 = cube(10)
+        console.log(result5)
+
+
+
+
+
+        function remainder(a6, b6) {
+            remain = a6 / b6
+            return remain
+        }
+        result6 = remainder(500, 100)
+        console.log(result6)
+
+
+
+
+
+        function circlearea(radius) {
+            circle = Math.PI * radius * radius
+            return circle
+        }
+        result8 = circlearea(5)
+        console.log(result8)
+
+
+
+
+
+
+        function average(a9, b9, c9) {
+            total = a9 + b9 + c9
+            avg = total / 3
+            return avg
+        }
+        result9 = average(10, 20, 30)
+        console.log(result9)
+
+
+
+
+
+
+
+        function EvenOdd(n) {
+            if (n % 2 === 0) {
+                return "Even"
+            } else {
+                return "Odd"
+            }
+        }
+        result10 = EvenOdd(10)
+        console.log(result10)
+
+
+
+
+
+
+
+        function checknumber(num) {
+            if (num > 0) {
+                return "Positive"
+            }
+            if (num < 0) {
+                return "Negative"
+            }
+            if (num === 0) {
+                return "Zero"
+            }
+        }
+        resultNum = checknumber(0)
+        console.log(resultNum)
+
+
+
+
+
+
+
+        function voting(age) {
+            if (age >= 18) {
+                return "Eligible to Vote"
+            }
+            else {
+                return "Not Eligible to Vote"
+            }
+        }
+        resultVoting = voting(23)
+        console.log(resultVoting)
+
+
+
+
+
+
+
+
+        function schlResult(marks) {
+            if (marks >= 40) {
+                return "Pass"
+            }
+            else {
+                return "Fail"
+            }
+        }
+        resultmarks = schlResult(49)
+        console.log(resultmarks)
+
+
+
+
+
+
+
+        function greater(num1, num2) {
+            if (num1 > num2) {
+                return "Num1 is greater than"
+            }
+            else if (num2 > num1) {
+                return "Num2 is greater than"
+            }
+            else {
+                return "Either number"
+            }
+        }
+        resultGreater = greater(99, 89)
+        console.log(resultGreater)
+
+
+
+
+
+
+        function largest(number1, number2, number3) {
+            if (number1 > number2 && number1 > number3) {
+                return number1
+            }
+            else if (number2 > number1 && number2 > number3) {
+                return number2
+            }
+            else if (number3 > number1 && number3 > number2) {
+                return number3
+            }
+            else {
+                return "Either number"
+            }
+        }
+        resultlargest = largest(59, 69, 49)
+        console.log(resultlargest)
+
+
+
+
+
+
+
+
+        function gradecalculator(MarksExam) {
+            if (MarksExam >= 90 && MarksExam <= 100) {
+                return "Grade A"
+            }
+            else if (MarksExam >= 80 && MarksExam <= 89) {
+                return "Grade B"
+            }
+            else if (MarksExam >= 70 && MarksExam <= 79) {
+                return "Grade C"
+            }
+            else if (MarksExam >= 60 && MarksExam <= 69) {
+                return "Grade D"
+            }
+            else if (MarksExam < 60) {
+                return "F"
+            } else {
+                return "Invalid Marks"
+            }
+        }
+
+
+
+
+
+
+        function checktemperature(temp) {
+            if (temp >= 30) {
+                return "Hot"
+            } else {
+                return "Normal"
+            }
+        }
+        result_temperature = checktemperature(33)
+        console.log(result_temperature)
+
+
+
+
+
+
+
+
+
+        function minutes_to_seconds(minutes) {
+            seconds = minutes * 60
+            return seconds
+        }
+        result_sec = minutes_to_seconds(8)
+        console.log(result_sec)
+
+
+
+
+
+
+
+
+
+        function hours_to_minutes(hours) {
+            minute = hours * 60
+            return minute
+        }
+        result_minute = hours_to_minutes(2)
+        console.log(result_minute)
+
+
+
+
+
+
+
+
+
+
+        function discount(price, discountperce) {
+            totals = price * discountperce / 100
+            return totals
+        }
+        resultdiscount = discount(1000, 20)
+        console.log(resultdiscount)
+
+
+
+
+
+
+
+        function final_price(pricing, discountprice) {
+            totel = pricing * discountprice / 100
+            finals = pricing - totel
+            return finals
+        }
+        resultfinal = final_price(1000, 20)
+        console.log(resultfinal)
+
+
+
+
+
+
+        function interest(principal, rate, time) {
+            interests = principal * rate * time / 100
+            return interests
+        }
+        resultinterst = interest(10000, 5, 2)
+        console.log(resultinterst)
+
+
+
+
+
+
+
+
+
+
+
+        function divisible(a10, b10) {
+            if (a10 % b10 === 0) {
+                return "True"
+            } else {
+                return "False"
+            }
+        }
+        resultdivisible = divisible(10, 2)
+        console.log(resultdivisible)
+    </script>
+
+
+</body>
+
+</html>
