@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 id="heading"></h1>
+
+    <p id="para">
+        this is paragraph
+    </p>
+
+    <p id="message">
+        click the button
+    </p>
+
+    <button onclick="change()">Click</button>
+
+
+
+
+
+    <p class="text">classname paragraph</p>
+    <p class="text">classname paragraph</p>
+    <p class="text">classname paragraph</p>
+    <p class="text">classname paragraph</p>
+    <p class="text">classname paragraph</p>
+
+
+
+
+    <div class="box">hi</div>
+    <div class="box">hi</div>
+    <div class="box">hi</div>
+    <div class="box">hi</div>
+
+
+
+
+    <h2>hey</h2>
+    <h2>hey</h2>
+    <h2>hey</h2>
+
+
+
+
+
+    <ul>
+        <li>Ata</li>
+        <li>chol</li>
+        <li>milk</li>
+        <li>ghee</li>
+        <li>daal</li>
+
+    </ul>
+
+
+
+    <h3 id="title"></h3>
+
+    <p class="info">hello world</p>
+    <p class="info">hello world</p>
+    <p class="info">hello world</p>
+
+
+
+
+
+    <div>
+        <h4>here is heading</h4>
+        <p>here is paragraph</p>
+    </div>
+
+
+
+
+    <p class="content">paragraphs</p>
+    <p class="content">paragraphs</p>
+    <p class="content">paragraphs</p>
+    <p class="content">paragraphs</p>
+    <p class="content">paragraphs</p>
+
+
+
+    <button>clicks</button>
+    <button>clicks</button>
+    <button>clicks</button>
+    <button>clicks</button>
+
+
+
+
+
+
+
+
+    <ul id="und">
+        <li>mouse</li>
+        <li>keyboard</li>
+        <li>cpu</li>
+        <li>monitor</li>
+        <li>headphone</li>
+        <li>airpord</li>
+
+    </ul>
+
+
+    <h1 id="main">student list</h1>
+    <p class="names">
+        Satnam singh
+    </p>
+    <p class="names">
+        Agam bhangal
+    </p>
+    <p class="names">
+        sukhwinder
+    </p>
+
+    <h5>
+        Punjabi
+    </h5>
+    <h5>
+        Hindi
+    </h5>
+    <h5>
+        English
+    </h5>
+    <button>clicks</button>
+    <button>clicks</button>
+    <button>clicks</button>
+    <button>clicks</button>
+    <button>clicks</button>
+
+
+
+
+
+
+
+    <script>
+
+        // Section A - (ById)  //
+
+
+
+
+        // **Q1. Change Heading (5 Marks)**
+
+        head = document.getElementById("heading")
+        head.innerHTML = "welecome to javascript dom"
+        head.style.color = "blue"
+
+        // Ans->->Heading text changed and color became blue.
+
+
+
+
+
+
+
+
+
+
+        // **Q2. Change Background Color (5 Marks)**
+
+
+        para = document.getElementById("para")
+        para.style.backgroundColor = "yellow"
+        para.style.fontSize = "20px"
+      
+        //   Ans->->Paragraph background became yellow and font size 20px.
+
+
+
+
+
+
+
+        // **Q3. Button Click Event (5 Marks)**
+
+
+        function change() {
+            click = document.getElementById("message")
+            click.innerHTML = "Button Clicked Successfully"
+            click.style.color = "green"
+        }
+
+        // Ans->->On button click, success message appears in green.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Section B - (ByClassName)
+
+
+
+
+
+
+        // **Q4. Change Multiple Paragraphs (5 Marks)**
+
+
+        txt = document.getElementsByClassName("text")
+        for (i = 0; i < txt.length; i++) {
+            txt[i].style.color = "red"
+            txt[i].style.fontSize = "18px"
+
+        }
+
+        // Ans->->All 5 paragraphs became red with 18px font size.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // **Q5. Change Box Styles (5 Marks)**
+
+        box = document.getElementsByClassName("box")
+        for (j = 0; j < box.length; j++) {
+            box[j].style.backgroundColor = "lightblue"
+            box[j].style.height = "100px"
+            box[j].style.width = "100px"
+            box[j].style.marginTop = "10px"
+            box[j].style.border = "2px solid black"
+
+        }
+
+        // Ans->->All 4 boxes got lightblue background, black border and 100px dimensions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Section C – ByTagName()
+
+
+
+
+
+
+
+
+
+        //   **Q6. Select All Headings (5 Marks)**
+
+
+        h2 = document.getElementsByTagName("h2")
+        for (k = 0; k < h2.length; k++) {
+            h2[k].style.color = "purple"
+            h2[k].style.backgroundColor = "lightGrey"
+        }
+
+        // Ans->->All 3 headings became purple with lightgray background.
+
+
+
+
+
+
+
+
+
+
+
+        // **Q7. Select All List Items (5 Marks)**
+
+        li = document.getElementsByTagName("li")
+        for (l = 0; l < li.length; l++) {
+            li[l].style.color = "green"
+            li[l].style.fontSize = "20px"
+        }
+
+        // Ans->->All list items became green with 20px font size.
+
+
+
+
+
+
+
+
+
+
+
+        // Section D - (querySelector)
+
+
+
+
+
+
+
+
+
+
+        // **Q8. Select an Element by ID (5 Marks)**
+
+
+        ttl = document.querySelector("#title")
+        ttl.innerHTML = "Learning javascript"
+        ttl.style.color = "orange"
+
+        // Ans->->Heading text changed to Learning JavaScript and color became orange.
+
+
+
+
+
+
+
+
+
+
+
+
+        // **Q9. Select an Element by Class (5 Marks)**
+
+        para = document.querySelector(".info")
+        para.innerHTML = "this is the first paragraph"
+        para.style.backgroundColor = "lightyellow"
+
+        //  Ans->->First paragraph text changed and background became lightyellow.
+
+
+
+
+
+
+
+
+
+
+
+
+        // *Q10. Select an Element Using CSS Selector (5 Marks)**
+
+        divpara = document.querySelector("div p")
+        divpara.style.color = "blue"
+        divpara.style.fontWeight = "bold"
+
+        // Ans->->Paragraph inside the div became blue and bold.
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // ## Section E – querySelectorAll() 
+
+
+
+
+
+
+
+
+
+
+
+        // **Q11. Select Multiple Paragraphs (5 Marks)**
+
+        paras = document.querySelectorAll(".content")
+        for (n = 0; n < paras.length; n++) {
+            paras[n].style.color = "brown"
+            paras[n].style.fontSize = "22px"
+        }
+
+        // Ans->->All 5 paragraphs became brown with 22px font size.
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // **Q12. Select All Buttons (5 Marks)**
+
+        btn = document.querySelectorAll("button")
+        for (o = 0; o < btn.length; o++) {
+            btn[o].style.backgroundColor = "black"
+            btn[o].style.color = "white"
+        }
+
+        //  Ans->->All buttons got black background and white text.
+
+
+
+
+
+
+
+
+
+
+        //  **Q13. Select Multiple List Items (5 Marks)**
+
+        itm = document.querySelectorAll("#und li")
+        for (p = 0; p < itm.length; p++) {
+            itm[p].style.fontSize = "18px"
+            itm[p].style.marginTop = "10px"
+            itm[p].style.backgroundColor = "none"
+            itm[p].style.color = "black"
+            itm[p].style.width = "90px"
+            if (p % 2 == 0) {
+                itm[p].style.backgroundColor = "#0b192c"
+                itm[p].style.color = "#e7f7ce"
+
+            }
+        }
+
+        // Ans->->Alternate list items got background color and all items got 18px font size.
+
+
+
+
+
+
+
+
+
+
+
+
+        //   ## Section F – Mixed DOM Practical (5 Marks)
+
+
+
+
+
+        // **Q14. Student Information Page (5 Marks)**
+
+
+        // Ans->->Main heading, student names, subject headings, 
+        // first student paragraph and all buttons were modified using the five DOM methods.
+
+
+
+
+
+        main_heading = document.getElementById("main")
+        main_heading.style.color = "Red"
+
+
+        naming = document.getElementsByClassName("names")
+        for (q = 0; q < naming.length; q++) {
+            naming[q].style.color = "Blue"
+        }
+
+
+        sub = document.getElementsByTagName("h5")
+        for (r = 0; r < sub.length; r++) {
+            sub[r].style.color = "brown"
+        }
+
+
+
+
+        first_name = document.querySelector(".names")
+        first_name.style.backgroundColor = "Yellow"
+        first_name.style.width = "100px"
+        first_name.style.color = "darkgreen"
+    </script>
+
+</body>
+
+</html>
