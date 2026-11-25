@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="heading">Welcome</h1>
+    <p id="description">This is a paragraph.</p>
+
+    <button onclick="updateContent()">Update Content</button>
+
+
+
+
+     <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <p>Fourth Paragraph</p>
+    <p>Fifth Paragraph</p>
+
+    <button onclick="highlightParagraphs()">Highlight Paragraphs</button>
+
+
+
+    <h2 class="student">Student 1</h2>
+    <h2 class="student">Student 2</h2>
+    <h2 class="student">Student 3</h2>
+    <h2 class="student">Student 4</h2>
+
+    <button onclick="updateStudents()">Update Students</button>
+
+
+
+
+
+     <div id="result"></div>
+
+    <button onclick="showText()">Show Text</button>
+    <button onclick="showHTML()">Show HTML</button>
+
+    <script>
+
+        
+        function updateContent() {
+            heading = document.getElementById("heading")
+            description = document.getElementById("description")
+
+            heading.innerText = "JavaScript DOM Manipulation"
+            description.innerText = "We are learning DOM methods in JavaScript."
+        }
+
+
+
+        function highlightParagraphs() {
+             para = document.getElementsByTagName("p");
+
+            for (    i = 0; i < para.length; i++) {
+                para[i].innerText = "Paragraph updated successfully!";
+                para[i].style.backgroundColor = "lightyellow";
+            }
+        }
+
+
+
+
+
+        function updateStudents() {
+             students = document.getElementsByClassName("student")
+
+            for ( a = 0; a < students.length; a++) {
+                students[a].innerText = "Student "  + a + " - Present"
+                students[a].style.color = "green"
+            }
+        }
+
+
+
+
+
+
+         function showText() {
+            result = document.getElementById("result")
+
+            result.innerText = "Welcome to JavaScript DOM <br>This content is added using innerText."
+        }
+
+        function showHTML() {
+             result = document.getElementById("result")
+
+            result.innerHTML = `
+                <h2>JavaScript DOM</h2>
+                <p>Learning innerHTML method.</p>
+                <strong>This is a bold statement.</strong>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            `
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
